@@ -1,16 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="imooc:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3343e3e3-e46f-49d7-a1e2-8aa8c0c9acb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc.iml" afterDir="false" />
+    <list default="true" id="3343e3e3-e46f-49d7-a1e2-8aa8c0c9acb7" name="Default Changelist" comment="第二次提交">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/CartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/OrderItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/PayInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/ShippingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/PayInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/Shipping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/CartMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/OrderItemMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/PayInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ShippingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -21,6 +74,13 @@
         <option value="D:\ssm电商\imooc\.idea" />
       </set>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -35,12 +95,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1l05mqOAAqnnpUmzk2XOH2FJY7m" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -135,11 +198,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -157,37 +215,114 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606721329916</updated>
-      <workItem from="1606721331450" duration="384000" />
+      <workItem from="1606721331450" duration="7057000" />
+      <workItem from="1606738969827" duration="115000" />
+      <workItem from="1606739114333" duration="254000" />
+      <workItem from="1606739399097" duration="1206000" />
     </task>
+    <task id="LOCAL-00001" summary="第一次提交">
+      <created>1606726156361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606726156361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="第一次提交" />
+    <MESSAGE value="第二次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二次提交" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="367" y="80" key="#Notifications" timestamp="1606726205200">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="367" y="80" key="#Notifications/0.0.1549.840@0.0.1549.840" timestamp="1606726205200" />
     <state x="230" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606721366158">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="230" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.840@0.0.1549.840" timestamp="1606721366158" />
-    <state x="555" y="162" key="FileChooserDialogImpl" timestamp="1606725763119">
+    <state x="505" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606738469699">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="555" y="162" key="FileChooserDialogImpl/0.0.1549.840@0.0.1549.840" timestamp="1606725763119" />
-    <state width="1506" height="216" key="GridCell.Tab.0.bottom" timestamp="1606721338052">
+    <state x="505" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.840@0.0.1549.840" timestamp="1606738469699" />
+    <state x="396" y="14" key="CommitChangelistDialog2" timestamp="1606791917241">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="216" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1606721338052" />
-    <state width="1506" height="216" key="GridCell.Tab.0.center" timestamp="1606721338052">
+    <state x="396" y="14" key="CommitChangelistDialog2/0.0.1549.840@0.0.1549.840" timestamp="1606791917241" />
+    <state x="148" y="73" key="DiffContextDialog" timestamp="1606726557147">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="216" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1606721338052" />
-    <state width="1506" height="216" key="GridCell.Tab.0.left" timestamp="1606721338051">
+    <state x="148" y="73" key="DiffContextDialog/0.0.1549.840@0.0.1549.840" timestamp="1606726557147" />
+    <state x="555" y="162" key="FileChooserDialogImpl" timestamp="1606740049791">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="216" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1606721338051" />
-    <state width="1506" height="216" key="GridCell.Tab.0.right" timestamp="1606721338052">
+    <state x="555" y="162" key="FileChooserDialogImpl/0.0.1549.840@0.0.1549.840" timestamp="1606740049791" />
+    <state width="716" height="46" key="GridCell.Tab.0.bottom" timestamp="1606738965337">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="216" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1606721338052" />
+    <state width="716" height="46" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1606738965337" />
+    <state width="716" height="46" key="GridCell.Tab.0.center" timestamp="1606738965336">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1606738965336" />
+    <state width="716" height="46" key="GridCell.Tab.0.left" timestamp="1606738965336">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1606738965336" />
+    <state width="716" height="46" key="GridCell.Tab.0.right" timestamp="1606738965337">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1606738965337" />
+    <state width="716" height="46" key="GridCell.Tab.1.bottom" timestamp="1606738965339">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.1.bottom/0.0.1549.840@0.0.1549.840" timestamp="1606738965339" />
+    <state width="716" height="46" key="GridCell.Tab.1.center" timestamp="1606738965338">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.1.center/0.0.1549.840@0.0.1549.840" timestamp="1606738965338" />
+    <state width="716" height="46" key="GridCell.Tab.1.left" timestamp="1606738965338">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.1.left/0.0.1549.840@0.0.1549.840" timestamp="1606738965338" />
+    <state width="716" height="46" key="GridCell.Tab.1.right" timestamp="1606738965338">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.1.right/0.0.1549.840@0.0.1549.840" timestamp="1606738965338" />
+    <state width="716" height="46" key="GridCell.Tab.2.bottom" timestamp="1606738965339">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.2.bottom/0.0.1549.840@0.0.1549.840" timestamp="1606738965339" />
+    <state width="716" height="46" key="GridCell.Tab.2.center" timestamp="1606738965339">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.2.center/0.0.1549.840@0.0.1549.840" timestamp="1606738965339" />
+    <state width="716" height="46" key="GridCell.Tab.2.left" timestamp="1606738965339">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.2.left/0.0.1549.840@0.0.1549.840" timestamp="1606738965339" />
+    <state width="716" height="46" key="GridCell.Tab.2.right" timestamp="1606738965339">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state width="716" height="46" key="GridCell.Tab.2.right/0.0.1549.840@0.0.1549.840" timestamp="1606738965339" />
+    <state x="284" y="63" key="SettingsEditor" timestamp="1606740052892">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="284" y="63" key="SettingsEditor/0.0.1549.840@0.0.1549.840" timestamp="1606740052892" />
+    <state x="367" y="154" key="Vcs.Push.Dialog.v2" timestamp="1606726645881">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="367" y="154" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1606726645881" />
+    <state x="433" y="161" width="672" height="678" key="search.everywhere.popup" timestamp="1606739819961">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="433" y="161" width="672" height="678" key="search.everywhere.popup/0.0.1549.840@0.0.1549.840" timestamp="1606739819961" />
   </component>
 </project>
