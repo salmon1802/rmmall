@@ -7,16 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3343e3e3-e46f-49d7-a1e2-8aa8c0c9acb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-datasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mmall.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/common/Const.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/common/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/common/ServerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/common/TokenCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/controller/portal/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mmall/util/PropertiesUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/imooc.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/imooc/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/imooc/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mmall/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mmall/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mmall/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +49,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -91,10 +98,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mmall/util" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ssm电商\imooc\src\main\java\com\mmall\util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ssm电商\imooc\src\main\webapp\WEB-INF" />
     </key>
@@ -210,7 +223,7 @@
       <workItem from="1606721331450" duration="7057000" />
       <workItem from="1606738969827" duration="115000" />
       <workItem from="1606739114333" duration="254000" />
-      <workItem from="1606739399097" duration="4191000" />
+      <workItem from="1606739399097" duration="21348000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1606726156361</created>
@@ -226,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606791946567</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第三次提交">
+      <created>1606795025341</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606795025341</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,17 +256,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="第一次提交" />
     <MESSAGE value="第二次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二次提交" />
+    <MESSAGE value="第三次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三次提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="367" y="80" key="#Notifications" timestamp="1606726205200">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="367" y="80" key="#Notifications/0.0.1549.840@0.0.1549.840" timestamp="1606726205200" />
-    <state x="230" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606794178211">
+    <state x="367" y="80" key="#Project_Structure" timestamp="1606811440744">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="230" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.840@0.0.1549.840" timestamp="1606794178211" />
+    <state x="367" y="80" key="#Project_Structure/0.0.1549.840@0.0.1549.840" timestamp="1606811440744" />
+    <state x="230" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606799092675">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="230" y="76" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.840@0.0.1549.840" timestamp="1606799092675" />
+    <state x="580" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1606800910797">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="580" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1549.840@0.0.1549.840" timestamp="1606800910797" />
     <state x="367" y="79" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1606794041949">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
@@ -255,10 +284,10 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="505" y="168" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.840@0.0.1549.840" timestamp="1606738469699" />
-    <state x="396" y="14" key="CommitChangelistDialog2" timestamp="1606791944800">
+    <state x="396" y="14" key="CommitChangelistDialog2" timestamp="1606795023828">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="396" y="14" key="CommitChangelistDialog2/0.0.1549.840@0.0.1549.840" timestamp="1606791944800" />
+    <state x="396" y="14" key="CommitChangelistDialog2/0.0.1549.840@0.0.1549.840" timestamp="1606795023828" />
     <state x="148" y="73" key="DiffContextDialog" timestamp="1606726557147">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
@@ -347,17 +376,17 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state width="1033" height="430" key="GridCell.Tab.4.right/0.0.1549.840@0.0.1549.840" timestamp="1606794205317" />
-    <state x="284" y="63" key="SettingsEditor" timestamp="1606794960192">
+    <state x="284" y="63" key="SettingsEditor" timestamp="1606802631445">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="284" y="63" key="SettingsEditor/0.0.1549.840@0.0.1549.840" timestamp="1606794960192" />
-    <state x="367" y="154" key="Vcs.Push.Dialog.v2" timestamp="1606791960683">
+    <state x="284" y="63" key="SettingsEditor/0.0.1549.840@0.0.1549.840" timestamp="1606802631445" />
+    <state x="367" y="154" key="Vcs.Push.Dialog.v2" timestamp="1606795045665">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="367" y="154" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1606791960683" />
-    <state x="433" y="161" width="672" height="678" key="search.everywhere.popup" timestamp="1606739819961">
+    <state x="367" y="154" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1606795045665" />
+    <state x="433" y="161" width="672" height="678" key="search.everywhere.popup" timestamp="1606822350202">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="433" y="161" width="672" height="678" key="search.everywhere.popup/0.0.1549.840@0.0.1549.840" timestamp="1606739819961" />
+    <state x="433" y="161" width="672" height="678" key="search.everywhere.popup/0.0.1549.840@0.0.1549.840" timestamp="1606822350202" />
   </component>
 </project>
