@@ -1,6 +1,7 @@
 package com.mmall.pojo;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Category {
     private Integer id;
@@ -13,17 +14,17 @@ public class Category {
 
     private Integer sortOrder;
 
-    private Date creatTime;
+    private Date createTime;
 
     private Date updateTime;
 
-    public Category(Integer id, Integer parentId, String name, Boolean status, Integer sortOrder, Date creatTime, Date updateTime) {
+    public Category(Integer id, Integer parentId, String name, Boolean status, Integer sortOrder, Date createTime, Date updateTime) {
         this.id = id;
         this.parentId = parentId;
         this.name = name;
         this.status = status;
         this.sortOrder = sortOrder;
-        this.creatTime = creatTime;
+        this.createTime = createTime;
         this.updateTime = updateTime;
     }
 
@@ -71,12 +72,12 @@ public class Category {
         this.sortOrder = sortOrder;
     }
 
-    public Date getCreatTime() {
-        return creatTime;
+    public Date getcreateTime() {
+        return createTime;
     }
 
-    public void setCreatTime(Date creatTime) {
-        this.creatTime = creatTime;
+    public void setcreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 
     public Date getUpdateTime() {
@@ -85,5 +86,18 @@ public class Category {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Category category = (Category) o;
+        return Objects.equals(id, category.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

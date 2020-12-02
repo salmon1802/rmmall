@@ -239,9 +239,10 @@ public class UserServiceImpl implements IUserService {
 
 
 
-    //backend包下
+
 
     /**
+     * 使用此方法的方法在backend包下
      * 校验是否是管理员
      *
      * @param user

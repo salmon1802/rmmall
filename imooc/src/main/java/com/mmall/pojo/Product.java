@@ -24,11 +24,11 @@ public class Product {
 
     private Integer status;
 
-    private Date creatTime;
+    private Date createTime;
 
     private Date updateTime;
 
-    public Product(Integer id, Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status, Date creatTime, Date updateTime) {
+    public Product(Integer id, Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status, Date createTime, Date updateTime) {
         this.id = id;
         this.categoryId = categoryId;
         this.name = name;
@@ -39,7 +39,7 @@ public class Product {
         this.price = price;
         this.stock = stock;
         this.status = status;
-        this.creatTime = creatTime;
+        this.createTime = createTime;
         this.updateTime = updateTime;
     }
 
@@ -127,12 +127,12 @@ public class Product {
         this.status = status;
     }
 
-    public Date getCreatTime() {
-        return creatTime;
+    public Date getcreateTime() {
+        return createTime;
     }
 
-    public void setCreatTime(Date creatTime) {
-        this.creatTime = creatTime;
+    public void setcreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 
     public Date getUpdateTime() {
