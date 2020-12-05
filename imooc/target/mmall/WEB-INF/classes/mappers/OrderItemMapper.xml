@@ -8,7 +8,7 @@
       <arg column="order_no" jdbcType="BIGINT" javaType="java.lang.Long" />
       <arg column="product_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="product_name" jdbcType="VARCHAR" javaType="java.lang.String" />
-      <arg column="prodcut_image" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="product_image" jdbcType="VARCHAR" javaType="java.lang.String" />
       <arg column="current_unit_price" jdbcType="DECIMAL" javaType="java.math.BigDecimal" />
       <arg column="quantity" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="total_price" jdbcType="DECIMAL" javaType="java.math.BigDecimal" />
@@ -17,7 +17,7 @@
     </constructor>
   </resultMap>
   <sql id="Base_Column_List" >
-    id, user_id, order_no, product_id, product_name, prodcut_image, current_unit_price, 
+    id, user_id, order_no, product_id, product_name, product_image, current_unit_price, 
     quantity, total_price, create_time, update_time
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -32,11 +32,11 @@
   </delete>
   <insert id="insert" parameterType="com.mmall.pojo.OrderItem" >
     insert into mmall_order_item (id, user_id, order_no, 
-      product_id, product_name, prodcut_image, 
+      product_id, product_name, product_image, 
       current_unit_price, quantity, total_price, 
       create_time, update_time)
     values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{orderNo,jdbcType=BIGINT}, 
-      #{productId,jdbcType=INTEGER}, #{productName,jdbcType=VARCHAR}, #{prodcutImage,jdbcType=VARCHAR}, 
+      #{productId,jdbcType=INTEGER}, #{productName,jdbcType=VARCHAR}, #{productImage,jdbcType=VARCHAR}, 
       #{currentUnitPrice,jdbcType=DECIMAL}, #{quantity,jdbcType=INTEGER}, #{totalPrice,jdbcType=DECIMAL},
             now(), now())
   </insert>
@@ -58,8 +58,8 @@
       <if test="productName != null" >
         product_name,
       </if>
-      <if test="prodcutImage != null" >
-        prodcut_image,
+      <if test="productImage != null" >
+        product_image,
       </if>
       <if test="currentUnitPrice != null" >
         current_unit_price,
@@ -93,8 +93,8 @@
       <if test="productName != null" >
         #{productName,jdbcType=VARCHAR},
       </if>
-      <if test="prodcutImage != null" >
-        #{prodcutImage,jdbcType=VARCHAR},
+      <if test="productImage != null" >
+        #{productImage,jdbcType=VARCHAR},
       </if>
       <if test="currentUnitPrice != null" >
         #{currentUnitPrice,jdbcType=DECIMAL},
@@ -128,8 +128,8 @@
       <if test="productName != null" >
         product_name = #{productName,jdbcType=VARCHAR},
       </if>
-      <if test="prodcutImage != null" >
-        prodcut_image = #{prodcutImage,jdbcType=VARCHAR},
+      <if test="productImage != null" >
+        product_image = #{productImage,jdbcType=VARCHAR},
       </if>
       <if test="currentUnitPrice != null" >
         current_unit_price = #{currentUnitPrice,jdbcType=DECIMAL},
@@ -155,7 +155,7 @@
       order_no = #{orderNo,jdbcType=BIGINT},
       product_id = #{productId,jdbcType=INTEGER},
       product_name = #{productName,jdbcType=VARCHAR},
-      prodcut_image = #{prodcutImage,jdbcType=VARCHAR},
+      product_image = #{productImage,jdbcType=VARCHAR},
       current_unit_price = #{currentUnitPrice,jdbcType=DECIMAL},
       quantity = #{quantity,jdbcType=INTEGER},
       total_price = #{totalPrice,jdbcType=DECIMAL},
@@ -163,4 +163,12 @@
       update_time = now()
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="getByOrderNoUserId" parameterType="map" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"></include>
+    from mmall_order_item
+    where order_no = #{orderNo}
+    and user_Id = #{userId}
+  </select>
 </mapper>
