@@ -14,7 +14,7 @@ public class OrderItem {
 
     private String productName;
 
-    private String prodcutImage;
+    private String productImage;
 
     private BigDecimal currentUnitPrice;
 
@@ -26,13 +26,13 @@ public class OrderItem {
 
     private Date updateTime;
 
-    public OrderItem(Integer id, Integer userId, Long orderNo, Integer productId, String productName, String prodcutImage, BigDecimal currentUnitPrice, Integer quantity, BigDecimal totalPrice, Date createTime, Date updateTime) {
+    public OrderItem(Integer id, Integer userId, Long orderNo, Integer productId, String productName, String productImage, BigDecimal currentUnitPrice, Integer quantity, BigDecimal totalPrice, Date createTime, Date updateTime) {
         this.id = id;
         this.userId = userId;
         this.orderNo = orderNo;
         this.productId = productId;
         this.productName = productName;
-        this.prodcutImage = prodcutImage;
+        this.productImage = productImage;
         this.currentUnitPrice = currentUnitPrice;
         this.quantity = quantity;
         this.totalPrice = totalPrice;
@@ -84,12 +84,12 @@ public class OrderItem {
         this.productName = productName == null ? null : productName.trim();
     }
 
-    public String getProdcutImage() {
-        return prodcutImage;
+    public String getproductImage() {
+        return productImage;
     }
 
-    public void setProdcutImage(String prodcutImage) {
-        this.prodcutImage = prodcutImage == null ? null : prodcutImage.trim();
+    public void setproductImage(String productImage) {
+        this.productImage = productImage == null ? null : productImage.trim();
     }
 
     public BigDecimal getCurrentUnitPrice() {
