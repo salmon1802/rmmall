@@ -14,38 +14,38 @@ import java.io.Serializable;
 //保证序列化json的时候，如果是null的对象，key也会消失
 public class ServerResponse<T> implements Serializable {
 
-    private int statue;
+    private int status;
     private String msg;
     private T data;
 
-    private ServerResponse(int statue){
-        this.statue = statue;
+    private ServerResponse(int status){
+        this.status = status;
     }
 
-    private ServerResponse(int statue,T data){
-        this.statue = statue;
+    private ServerResponse(int status,T data){
+        this.status = status;
         this.data = data;
     }
 
-    private ServerResponse(int statue,String msg,T data){
-        this.statue = statue;
+    private ServerResponse(int status,String msg,T data){
+        this.status = status;
         this.msg = msg;
         this.data = data;
     }
 
-    public ServerResponse(int statue,String msg){
-        this.statue = statue;
+    public ServerResponse(int status,String msg){
+        this.status = status;
         this.msg = msg;
     }
 
     @JsonIgnore
     //使之不再序列化
     public boolean isSuccess(){
-        return this.statue == ResponseCode.Success.getCode();
+        return this.status == ResponseCode.Success.getCode();
     }
 
-    public int getStatue() {
-        return statue;
+    public int getStatus() {
+        return status;
     }
 
     public String getMsg() {
